@@ -106,12 +106,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #65ca00;
+		color: #43B3E0;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #ff8800 !important;
+			color: #43bff0 !important;
 		}
 
 		a img {
@@ -221,12 +221,17 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+
+    p {
+        text-align: left;
+    }
+
 /* Container */
 
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
-		width: 1200px;
+		width: 1400px;
 	}
 
 		.container.medium {
@@ -287,12 +292,13 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
+		box-sizing:border-box;
+		align-items:center;
+        height: auto;
 	}
 
 		.row > * {
-			box-sizing: border-box;
+			box-sizing:border-box;
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -1657,6 +1663,49 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+    #mockup {
+        width:80%;
+        align-self:center;
+    }
+            
+
+    #ux_pyramid {
+       width:90%;
+    }
+
+    #sus {
+        width:90%;
+    }
+
+    #sus_summary  ,#sus_score     {
+        display:flexbox ;
+        width:45%;
+    }
+
+    #research_results {
+        width :90%;
+    }
+
+    .image-container {
+        position: relative;
+      }
+      
+      .image-name {
+        position: absolute;
+        top: -2%;
+        left: 0%;
+        width: 50%;
+        background-color:none;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 10px;
+      }
+
+    #before, #redesign {
+        width:90%;
+    }
+
+
 
 /* Button */
 
@@ -1674,7 +1723,7 @@ input, select, textarea {
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
 		-webkit-appearance: none;
-		position: relative;
+	    position:relative;
 		display: inline-block;
 		color: #fff !important;
 		text-decoration: none;
@@ -1683,14 +1732,16 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 		cursor: pointer;
-		border-radius: 8px;
+		border-radius: 5px;
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
 		background-color: #4e4e4e;
-		padding: 1em 2.35em 1em 2.35em;
+		padding: 3em 2.35em 3em 2.35em;
 		font-size: 1.1em;
-		max-width: 24em;
+        text-align: center;
+		width:49%;
+        
 	}
 
 		input[type="button"]:hover,
@@ -1746,15 +1797,23 @@ input, select, textarea {
 				background-color: #863a21;
 			}
 
+    .case_buttons {
+        padding: 1em 0 1 0;
+        align-items: center;
+    }
+    
+
 /* List */
 
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+        
 	}
 
 		ul li {
 			padding-left: 0.5em;
+            text-align: left;
 		}
 
 	ol {
@@ -2049,12 +2108,13 @@ input, select, textarea {
 					border-right: solid 0.75em transparent;
 					border-top: solid 0.6em #282828;
 				}
-		.icon {
-			height: 4.5em;
-			position: fixed;
-			top:0%;
-			left: 10%;
-		}
+    
+     .icon {
+              height: 4.5em;
+              position: fixed;
+              top:0%;
+              left: 10%;
+           }
 
 /* Articles */
 
@@ -2063,31 +2123,32 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 5em 0 5em 0;
 		text-align: left;
 	}
 
 		#top .image {
-			border-radius: 100%;
-			width: 20em;
-			height: 20em;
+			border-radius: 0%;
+			width: 40em;
+			height: 25em;
 			margin: 0;
+            
 		}
 
 			#top .image img {
-				border-radius: 100%;
+				border-radius: 0%;
 			}
 
 		#top h1 {
 			margin-top: 0.35em;
 		}
 
-		#top p {
+		#top h2 {
 			font-size: 1.5em;
 			line-height: 1.75em;
 		}
 
-			#top p a {
+			#top h2 a {
 				color: inherit;
 			}
 
@@ -2170,8 +2231,8 @@ input, select, textarea {
 			}
 
 				#top .image {
-					width: 24em;
-					height: 24em;
+					width: 36em;
+					height: 36em;
 					margin: 0;
 				}
 
@@ -2257,6 +2318,7 @@ input, select, textarea {
 				font-size: 1.2em;
 				width: 100%;
 				padding: 1em 0 1em 0;
+                
 			}
 
 				input[type="button"].large,
@@ -2266,6 +2328,7 @@ input, select, textarea {
 				.button.large {
 					font-size: 1.2em;
 					letter-spacing: 0;
+                    width:40%;
 				}
 
 		/* Social */
@@ -2368,8 +2431,8 @@ input, select, textarea {
 			}
 
 				#top .image {
-					width: 15em;
-					height: 15em;
+					width: 24em;
+					height: 24em;
 					margin-bottom: 0;
 				}
 
