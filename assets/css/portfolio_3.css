@@ -68,6 +68,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+li, p {
+	color:#515151;
+}
+
 /* Basic */
 
 	html {
@@ -214,7 +218,7 @@ input, select, textarea {
 		}
 
 	footer {
-		margin: 3em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		footer > p {
@@ -1705,6 +1709,11 @@ input, select, textarea {
         width:90%;
     }
 
+	#cityofvancouver {
+		width:50%;
+		position:left;
+	}
+
 
 
 /* Button */
@@ -1797,11 +1806,37 @@ input, select, textarea {
 				background-color: #863a21;
 			}
 
-    .case_buttons {
-        padding: 1em 0 1 0;
-        align-items: center;
-    }
-    
+
+		.case_buttons {
+			justify-content: space-evenly;
+			
+		}
+
+		.button.large.left{
+			text-align: left;
+		}
+		  .button.large.left h3 {
+			color: white;
+		  }
+
+		  .button.large.left p {
+			font-size: 0.8em;
+			color: rgb(232, 232, 232);
+		  }
+
+		.button.large.right{
+			text-align: right;
+		}
+		  .button.large.right h3 {
+		  	color: white;
+		    }
+
+		  .button.large.right p {
+			text-align: right;
+			font-size: 0.8em;
+			color: rgb(232, 232, 232);
+		  }
+
 
 /* List */
 
@@ -2043,6 +2078,13 @@ input, select, textarea {
 				.wrapper.style4 form textarea:focus {
 					background: #f9ddd1;
 				}
+		
+	.wrapper.buttons {
+		background-color:#FAFAFA;
+		padding: 0 0 0 0;
+		justify-content: space-between;
+	}
+		
 
 /* Nav */
 
@@ -2290,7 +2332,7 @@ input, select, textarea {
 				}
 
 			footer {
-				margin: 2.5em 0 0 0;
+				margin: 0 0 0 0;
 			}
 
 				footer > p {
